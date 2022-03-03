@@ -26,11 +26,27 @@ export async function getStaticProps(){
 const todos = await fetch('https://jsonplaceholder.typicode.com/posts');
 const res =await todos.json();
 
-if(!res){
-    return{
-        notFound: true,
-    }
-}
+
+
+
+
+// if(!res){
+//     return{
+//         notFound: true,
+//     }
+// }
+
+// ************* jodi data na pai taile redirects or non found page a dekha booo  ****************
+
+// if (!data) {
+//     return {
+//       redirect: {
+//         destination: '/',
+//         permanent: false,
+//         // statusCode: 301
+//       },
+//     }
+//   }
 
 
     return {
